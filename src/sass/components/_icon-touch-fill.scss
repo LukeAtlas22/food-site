@@ -1,2 +1,26 @@
+@use "../abstracts/" as *;
+
 .icon-touch-fill {
+  & svg {
+    color: $icon-tf-background-default;
+  }
+
+  & svg path {
+    stroke: $icon-tf-stroke-default;
+  }
+}
+
+.icon-touch-fill[data-type="active"] {
+  & svg {
+    color: $icon-tf-background-active;
+  }
+
+  & svg path {
+    stroke: $icon-tf-stroke-active;
+  }
+
+  & svg .accent-path {
+    stroke: $icon-tf-accent-path-color;
+    fill: $icon-tf-accent-path-color;
+  }
 }
