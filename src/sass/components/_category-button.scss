@@ -1,0 +1,47 @@
+@use "../abstracts/" as *;
+
+/// Questo è un bottone che permette di scorrere attraverso le categorie di cibo - Ha uno stato di default e uno stato attivo, cambiabili tramite l'attributo "data-type" (default, active)
+
+.category-button {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: $ctf-btn-gap;
+  width: $ctf-btn-width;
+  height: $ctf-btn-height;
+  border: $ctf-btn-border $ctf-btn-border-color-default;
+  border-radius: $ctf-btn-border-radius;
+  transition: $ctf-btn-transition;
+
+  &__icon {
+    width: $ctf-btn-icon-size;
+  }
+
+  &__label {
+    font-family: $ctf-btn-label-font-family;
+    font-size: $ctf-btn-label-font-size;
+    font-weight: $ctf-btn-label-font-weight;
+    color: $ctf-btn-label-color;
+  }
+
+  // Background
+  &::after {
+    content: "";
+    z-index: -1;
+    background-color: $ctf-btn-background-default;
+    border-radius: $ctf-btn-border-radius;
+    position: absolute;
+    inset: $ctf-btn-background-inset;
+    opacity: 10%;
+  }
+}
+
+.category-button[data-type="active"] {
+  border-color: $ctf-btn-border-color-active;
+
+  &::after {
+    background-color: $ctf-btn-background-active;
+  }
+}

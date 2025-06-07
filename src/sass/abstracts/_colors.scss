@@ -1,43 +1,58 @@
 // Global Tokens
-$-clr-white: hsl(0 0% 100%);
-$-clr-orange-300: hsl(8 62% 75%);
-$-clr-orange-400: hsl(8 62% 55%);
-$-clr-orange-500: hsl(8 62% 35%);
-$-clr-brown-100: hsl(33 24% 92%);
-$-clr-brown-200: hsl(33 25% 88%);
-$-clr-brown-300: hsl(33 23% 69%);
-$-clr-brown-400: hsl(22 31% 44%);
-$-clr-brown-700: hsl(20 23% 23%);
-$-clr-brown-800: hsl(18 23% 10%);
+$-orange-100: #f0cac1;
+$-orange-500: #fe554a; // colore brillante,
+$-orange-400: #f9881f; // arancione vivo
+$-orange-300: #ff774c; // arancione chiaro
+$-teal-200: #a9e88b;
+$-teal-500: #3ec032;
+$-teal-800: #08735f; // verde petrolio scuro
+$-gray-900: #2a3037; // grigio antracite
+$-gray-400: #c6c9cc; // grigio chiaro
+$-gray-300: #dfe2e5; // grigio molto chiaro
+$-gray-200: #f0f0f0; // grigio quasi bianco
+$-gray-100: #f7f7fb; // grigio chiarissimo tendente al bianco
 
 // Generate custom properties from globals tokens
 $colors: (
   neutral: (
-    100: $-clr-white,
-  ),
-  accent: (
-    300: $-clr-orange-300,
-    400: $-clr-orange-400,
-    500: $-clr-orange-500,
+    100: $-gray-100,
+    200: $-gray-200,
+    300: $-gray-300,
+    400: $-gray-400,
+    900: $-gray-900,
   ),
   primary: (
-    100: $-clr-brown-100,
-    200: $-clr-brown-200,
-    300: $-clr-brown-300,
-    400: $-clr-brown-400,
-    700: $-clr-brown-700,
-    800: $-clr-brown-800,
+    100: $-orange-100,
+    300: $-orange-300,
+    400: $-orange-400,
+    500: $-orange-500,
+  ),
+  accent: (
+    200: $-teal-200,
+    500: $-teal-500,
+    800: $-teal-800,
   ),
 );
 
 // Contextual Tokens 1
+// Contextual Tokens corretti
 $color-neutral-100: var(--neutral-100);
-$color-accent-300: var(--accent-300);
-$color-accent-400: var(--accent-400);
-$color-accent-500: var(--accent-500);
+$color-neutral-200: var(--neutral-200);
+$color-neutral-300: var(--neutral-300);
+$color-neutral-400: var(--neutral-400);
+$color-neutral-900: var(--neutral-900);
+
 $color-primary-100: var(--primary-100);
-$color-primary-200: var(--primary-200);
 $color-primary-300: var(--primary-300);
 $color-primary-400: var(--primary-400);
-$color-primary-700: var(--primary-700);
-$color-primary-800: var(--primary-800);
+$color-primary-500: var(--primary-500);
+
+$color-accent-800: var(--accent-800);
+$color-accent-500: var(--accent-500);
+$color-accent-200: var(--accent-200);
+
+$gradient-primary: linear-gradient(
+  to right,
+  var(--primary-300),
+  var(--primary-400)
+);
