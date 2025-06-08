@@ -1,9 +1,0 @@
-@use "../abstracts/" as *;
-
-.wrapper-container {
-  display: flex;
-  padding-inline: $container-min-margin-inline;
-  overflow-x: auto;
-}
-
-// todo: Shadow

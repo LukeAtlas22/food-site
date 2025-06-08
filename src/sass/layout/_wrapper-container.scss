@@ -1,0 +1,49 @@
+@use "../abstracts/" as *;
+
+.wrapper-container {
+  display: flex;
+  padding-inline: $container-min-margin-inline;
+  overflow-x: auto;
+  position: relative;
+}
+
+.wrapper-container[shadow]::after {
+  content: "";
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 20px;
+  background-color: red;
+  box-shadow: -13px -8px 31px 7px #000000;
+
+  animation: shadow;
+  animation-timeline: scroll(inline nearest);
+}
+
+@keyframes shadow {
+  from {
+    opacity: 0;
+  }
+  20% {
+    opacity: 50;
+  }
+  to {
+    opacity: 100;
+  }
+}
+
+.wrapper-container[shadow]::before {
+  content: "";
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 20px;
+  // background-color: red;
+  box-shadow: 13px -8px 31px 7px #000000;
+
+  animation: shadow;
+  animation-timeline: scroll(inline nearest);
+  animation-direction: reverse;
+}
