@@ -11,6 +11,10 @@
   gap: $flex-group-gap;
 }
 
+.no-wrap {
+  flex-wrap: nowrap;
+}
+
 .split {
   display: flex;
   align-items: center;
@@ -28,4 +32,8 @@
 
 section {
   padding-block: $section-padding-block;
+}
+
+.overflow-x {
+  overflow-x: auto;
 }

@@ -1,0 +1,51 @@
+@use "../abstracts/" as *;
+
+.card-food {
+  font-family: $card-food-font-family;
+  font-size: $card-food-font-size;
+  font-weight: $card-food-font-weight;
+  color: $card-food-color;
+  background-color: $card-food-background;
+
+  width: $card-food-width;
+  max-width: $card-food-max-width;
+  min-width: $card-food-min-width;
+
+  padding: $card-food-padding;
+  border-radius: $card-food-border-radius;
+
+  display: grid;
+  gap: $card-food-gap;
+
+  &__image {
+    width: $card-food-image-size;
+  }
+
+  &__content {
+    display: grid;
+    gap: $card-food-content-gap;
+  }
+
+  &__title {
+    font-family: $card-food-title-font-family;
+    font-size: $card-food-title-font-size;
+    font-weight: $card-food-title-font-weight;
+  }
+
+  &__text {
+    //
+  }
+
+  &__descriptors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__descriptor--icon {
+    width: $card-food-descriptor-icon-size;
+    @include flex-center;
+  }
+  &__descriptor--text {
+    font-size: $card-food-descriptor-text-font-size;
+  }
+}

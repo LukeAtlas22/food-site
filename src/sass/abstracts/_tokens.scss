@@ -43,6 +43,7 @@ $container-max-width-wide: 75rem;
 // Border-radius
 $border-radius-1: $size-2;
 $border-radius-2: $size-4;
+$border-radius-3: $size-7;
 
 // Shadows
 $box-shadow-1: 0 $size-1 $size-4 rgb(0 0 0 / 0.05);
@@ -93,6 +94,33 @@ $icon-tf-background-active: $color-primary-500;
 $icon-tf-stroke-active: $color-primary-500;
 
 $icon-tf-accent-path-color: $color-neutral-100;
+
+// Card food
+$card-food-width: 220px;
+$card-food-max-width: 220px;
+$card-food-min-width: 220px;
+
+$card-food-padding: $size-5 $size-4;
+$card-food-border-radius: $border-radius-3;
+
+$card-food-gap: $size-4 + 0.1rem;
+
+$card-food-color: $color-text-default;
+$card-food-background: white;
+
+$card-food-image-size: 10.625rem;
+
+$card-food-title-font-family: $body-font-family;
+$card-food-title-font-size: $font-size-600;
+$card-food-title-font-weight: $font-weight-default;
+$card-food-font-family: $body-font-family;
+$card-food-font-size: $body-font-size;
+$card-food-font-weight: $font-weight-default;
+
+$card-food-content-gap: $size-2;
+
+$card-food-descriptor-icon-size: $size-4;
+$card-food-descriptor-text-font-size: $font-size-500;
 
 // Buttons
 // $button-font-family: $body-font-family;

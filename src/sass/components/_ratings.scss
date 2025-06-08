@@ -1,0 +1,6 @@
+@use "../abstracts/" as *;
+.ratings {
+  display: flex;
+  align-items: center;
+  gap: $size-1 - 0.1rem;
+}

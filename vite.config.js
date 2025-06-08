@@ -14,4 +14,9 @@ export default defineConfig({
       },
     },
   },
+  server: {
+    host: true,           // o "0.0.0.0"
+    port: 5173,           // forza porta fissa (opzionale)
+    strictPort: true      // evita cambio automatico
+  }
 });
