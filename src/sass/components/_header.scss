@@ -9,13 +9,18 @@
   background-color: $header-background-color;
   color: $header-color;
 
-  &__list {
-    gap: $header-list-gap;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  &__list-item {
-    padding: $header-list-padding;
-    font-weight: $header-list-font-weight;
-    color: $header-list-color;
+  &__navigation {
+  }
+
+  &__central {
+  }
+
+  &__right {
   }
 }

@@ -2,6 +2,7 @@
 
 .icon-touch-fill {
   & svg {
+    width: $icon-tf-default-size;
     color: $icon-tf-background-default;
   }
 

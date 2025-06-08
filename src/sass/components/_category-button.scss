@@ -10,6 +10,7 @@
   position: relative;
   gap: $ctf-btn-gap;
   width: $ctf-btn-width;
+  min-width: $ctf-btn-width;
   height: $ctf-btn-height;
   border: $ctf-btn-border $ctf-btn-border-color-default;
   border-radius: $ctf-btn-border-radius;

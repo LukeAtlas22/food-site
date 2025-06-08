@@ -1,0 +1,29 @@
+@use "../abstracts/" as *;
+
+.hm-menu {
+  width: $hm-menu-size;
+  aspect-ratio: 1/1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: $hm-menu-gap;
+  border-radius: $hm-menu-border-radius;
+  background-color: $hm-menu-background;
+
+  &__line-1,
+  &__line-2,
+  &__line-3 {
+    margin-left: 25%;
+    height: 1px;
+    background-color: $hm-menu-lines-color;
+  }
+  &__line-1 {
+    width: 50%;
+  }
+  &__line-2 {
+    width: 35%;
+  }
+  &__line-3 {
+    width: 20%;
+  }
+}

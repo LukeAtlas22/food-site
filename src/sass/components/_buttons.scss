@@ -17,12 +17,23 @@
   }
 
   &[data-type="primary"] {
-    background-color: $button-primary-background;
+    background: $button-primary-background;
     color: $button-primary-color;
 
     &:is(:hover, :focus) {
-      background-color: $button-primary-background-hover;
+      background: $button-primary-background-hover;
       color: $button-primary-color-hover;
+    }
+  }
+
+  &[data-shape="circle"] {
+    border-radius: 50rem;
+    padding: $button-circle-padding;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    svg {
+      width: $button-circle-icon-size-default;
     }
   }
 

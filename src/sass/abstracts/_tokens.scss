@@ -33,7 +33,7 @@ $grid-gap: $size-8;
 $flex-group-gap: $size-6;
 
 $hero-padding-block: clamp(15rem, 15vh, 20rem);
-$section-padding-block: clamp($size-10, 10vh, $size-11);
+$section-padding-block: $size-3;
 
 $container-min-margin-inline: $size-4;
 $container-max-width: 60rem;
@@ -94,6 +94,7 @@ $icon-tf-background-active: $color-primary-500;
 $icon-tf-stroke-active: $color-primary-500;
 
 $icon-tf-accent-path-color: $color-neutral-100;
+$icon-tf-default-size: $size-6;
 
 // Card food
 $card-food-width: 220px;
@@ -122,27 +123,56 @@ $card-food-content-gap: $size-2;
 $card-food-descriptor-icon-size: $size-4;
 $card-food-descriptor-text-font-size: $font-size-500;
 
-// Buttons
-// $button-font-family: $body-font-family;
-// $button-font-weight: $font-weight-bold;
-// $button-font-size: $font-size-600;
-// $button-text-transform: none;
-// $button-padding-default: 0.75em 2em;
-// $button-padding-default-coarse: 0.85em 2em;
-// $button-border: none;
-// $button-border-radius: $border-radius-1;
-// $button-letter-spacing: 0;
-// $button-transition: 275ms ease;
+//Buttons
+$button-font-family: $body-font-family;
+$button-font-weight: $font-weight-bold;
+$button-font-size: $font-size-500;
+$button-text-transform: none;
+$button-padding-default: 0.75em 2em;
+$button-padding-default-coarse: 0.85em 2em;
+$button-border: none;
+$button-border-radius: $border-radius-1;
+$button-letter-spacing: 0;
+$button-transition: 275ms ease;
 
-// $button-accent-color: $color-neutral-100;
-// $button-accent-background: $color-accent-400;
-// $button-accent-color-hover: $color-neutral-100;
-// $button-accent-background-hover: $color-accent-500;
+$button-accent-color: $color-neutral-100;
+$button-accent-background: $color-accent-500;
+$button-accent-color-hover: $color-neutral-100;
+$button-accent-background-hover: $color-accent-500;
 
-// $button-primary-color: $color-neutral-100;
-// $button-primary-background: $color-primary-700;
-// $button-primary-color-hover: $color-neutral-100;
-// $button-primary-background-hover: $color-primary-800;
+$button-circle-padding: $size-5;
+$button-circle-icon-size-default: $size-5;
+
+$button-primary-color: $color-neutral-100;
+$button-primary-background: $gradient-primary;
+$button-primary-color-hover: $color-neutral-100;
+$button-primary-background-hover: $gradient-primary;
+
+// Navigation primary
+$nav-primary-button-size: $size-6;
+$nav-primary-relevant-button-size: $size-11;
+$nav-primary-gap: $size-4;
+$nav-primary-padding: 0px 30px 25px 30px;
+$nav-primary-min-inline-margins: 5px;
+
+$nav-primary-background: white;
+$nav-primary-border-radius: $border-radius-3;
+
+$nav-primary-relevant-button-border: 4px solid;
+$nav-primary-relevant-button-box-shadow: $box-shadow-2;
+$nav-primary-relevant-button-icon-size: $size-6 - 0.1rem;
+
+// Avatar
+$avatar-size: $size-9;
+$avatar-background: rgb(255, 255, 255);
+$avatar-image-size: 100%;
+
+// Hamburger Menu - 1
+$hm-menu-size: $size-9;
+$hm-menu-background: white;
+$hm-menu-lines-color: $color-neutral-900;
+$hm-menu-gap: $size-1 + 0.1;
+$hm-menu-border-radius: $border-radius-2;
 
 // Cards
 // $card-flow-spacing: $size-3;
@@ -171,20 +201,17 @@ $card-food-descriptor-text-font-size: $font-size-500;
 // $card-link-letter-spacing: 1;
 // $card-link-text-transform: none;
 
-// // Header
-// $header-font-family: $font-family-accent;
-// $header-letter-spacing: $letter-spacing-loose;
-// $header-font-weight: $font-weight-default;
-// $header-text-transform: uppercase;
-// $header-background-color: $color-primary-800;
-// $header-block-padding: $size-8;
-// $header-color: $color-primary-100;
+// Header
+$header-font-family: $font-family-accent;
+$header-letter-spacing: none;
+$header-font-weight: $font-weight-default;
+$header-text-transform: none;
+$header-background-color: transparent;
+$header-block-padding: $size-8;
+$header-color: $color-text-default;
 
-// $header-list-gap: $flex-group-gap;
-
-// $header-list-padding: $size-6 $size-3;
-// $header-list-font-weight: $font-weight-bold;
-// $header-list-color: $header-color;
+$header-list-font-weight: $font-weight-bold;
+$header-list-color: $header-color;
 
 // // Footer
 // $footer-font-family: $font-family-accent;
