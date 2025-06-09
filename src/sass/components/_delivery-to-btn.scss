@@ -1,0 +1,8 @@
+@use "../abstracts/" as *;
+.delivery-to-btn {
+  text-decoration: underline;
+
+  &:after {
+    content: "";
+  }
+}

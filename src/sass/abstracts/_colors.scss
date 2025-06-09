@@ -7,6 +7,7 @@ $-teal-200: #a9e88b;
 $-teal-500: #3ec032;
 $-teal-800: #08735f; // verde petrolio scuro
 $-gray-900: #2a3037; // grigio antracite
+$-gray-800: #3d3d3d;
 $-gray-500: #aaacae;
 $-gray-400: #c6c9cc; // grigio chiaro
 $-gray-300: #dfe2e5; // grigio molto chiaro
@@ -21,6 +22,7 @@ $colors: (
     300: $-gray-300,
     400: $-gray-400,
     500: $-gray-500,
+    800: $-gray-800,
     900: $-gray-900,
   ),
   primary: (
@@ -43,6 +45,7 @@ $color-neutral-200: var(--neutral-200);
 $color-neutral-300: var(--neutral-300);
 $color-neutral-400: var(--neutral-400);
 $color-neutral-500: var(--neutral-500);
+$color-neutral-800: var(--neutral-800);
 $color-neutral-900: var(--neutral-900);
 
 $color-primary-100: var(--primary-100);

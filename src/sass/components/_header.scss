@@ -23,4 +23,12 @@
 
   &__right {
   }
+
+  &__navigation,
+  &__central,
+  &__right {
+    button {
+      width: $header-buttons-size-default;
+    }
+  }
 }

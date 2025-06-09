@@ -23,6 +23,7 @@ $body-line-height: 1.5;
 $body-font-weight: $font-weight-default;
 $body-text-color: $color-text-default;
 $body-background-color: $color-background-default;
+$body-margin-bottom: 5rem;
 
 // General
 $link-color: $color-text-interactive-default;
@@ -33,7 +34,7 @@ $grid-gap: $size-8;
 $flex-group-gap: $size-6;
 
 $hero-padding-block: clamp(15rem, 15vh, 20rem);
-$section-padding-block: $size-3;
+$section-padding-block: $size-6;
 
 $container-min-margin-inline: $size-4;
 $container-max-width: 60rem;
@@ -49,6 +50,9 @@ $border-radius-3: $size-7;
 $box-shadow-1: 0 $size-1 $size-4 rgb(0 0 0 / 0.05);
 $box-shadow-2: 0 $size-1 $size-4 rgb(0 0 0 / 0.15);
 
+// Icons
+$icons-default-size: $size-6;
+
 // ========================================= //
 // ▄▀▀ ▄▀▄ █▄ ▄█ █▀▄ ▄▀▄ █▄ █ ██▀ █▄ █ ▀█▀ ▄▀▀
 // ▀▄▄ ▀▄▀ █ ▀ █ █▀  ▀▄▀ █ ▀█ █▄▄ █ ▀█  █  ▄█▀
@@ -58,10 +62,10 @@ $box-shadow-2: 0 $size-1 $size-4 rgb(0 0 0 / 0.15);
 $heading-font-family: $font-family-accent;
 $heading-font-size-default: $font-size-600;
 $heading-font-weight: $font-weight-bold;
-$heading-color-default: $body-text-color;
-$heading-letter-spacing: $letter-spacing-loose;
+$heading-color-default: $color-neutral-800;
+$heading-letter-spacing: 1;
 $heading-line-height: 1;
-$heading-text-transform: uppercase;
+$heading-text-transform: none;
 
 // Category button
 $ctf-btn-width: $size-12;
@@ -69,7 +73,7 @@ $ctf-btn-height: $size-13 + 0.8;
 
 $ctf-btn-gap: $size-2;
 
-$ctf-btn-icon-size: 26px;
+$ctf-btn-icon-size: $icons-default-size;
 
 $ctf-btn-label-font-size: $font-size-500;
 $ctf-btn-label-font-family: $body-font-family;
@@ -94,7 +98,7 @@ $icon-tf-background-active: $color-primary-500;
 $icon-tf-stroke-active: $color-primary-500;
 
 $icon-tf-accent-path-color: $color-neutral-100;
-$icon-tf-default-size: $size-6;
+$icon-tf-default-size: $icons-default-size;
 
 // Card food
 $card-food-width: 220px;
@@ -141,7 +145,7 @@ $button-accent-color-hover: $color-neutral-100;
 $button-accent-background-hover: $color-accent-500;
 
 $button-circle-padding: $size-5;
-$button-circle-icon-size-default: $size-5;
+$button-circle-icon-size-default: $icons-default-size;
 
 $button-primary-color: $color-neutral-100;
 $button-primary-background: $gradient-primary;
@@ -207,11 +211,13 @@ $header-letter-spacing: none;
 $header-font-weight: $font-weight-default;
 $header-text-transform: none;
 $header-background-color: transparent;
-$header-block-padding: $size-8;
+$header-block-padding: $size-8 $size-4;
 $header-color: $color-text-default;
 
 $header-list-font-weight: $font-weight-bold;
 $header-list-color: $header-color;
+
+$header-buttons-size-default: $size-9;
 
 // // Footer
 // $footer-font-family: $font-family-accent;
